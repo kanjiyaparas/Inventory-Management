@@ -3,6 +3,11 @@
 
 An Inventory Management System built with Vite, React.js for the frontend, and Node.js, Express, and MongoDB for the backend.
 
+## Live URL
+- *Frontend*: [Project App Frontend](https://inventory-management-2wmy7jaoi-paras-patels-projects-ebd7dde8.vercel.app/)
+- *Backend*: [Project App Backend](https://inventory-management-8lgj.onrender.com)
+
+
 ## Table of Contents
 
 - [Features](#features)
@@ -22,127 +27,6 @@ An Inventory Management System built with Vite, React.js for the frontend, and N
 - Track product history
 - Dashboard with analytics
 - Responsive design with Tailwind CSS
-
-## Folder Structure
-
-```plaintext
-C:.
-├───Backend
-│   │   .env
-│   │   .gitignore
-│   │   app.js
-│   │   config.npmrc
-│   │   package-lock.json
-│   │   package.json
-│   │   README.md
-│   │
-│   ├───controllers
-│   │       product_controller.js
-│   │       user_controllers.js
-│   │
-│   ├───db
-│   │       user_db.js
-│   │
-│   ├───middlewares
-│   │       user_auth.js
-│   │
-│   ├───models
-│   │       company_model.js
-│   │       history_model.js
-│   │       locations_models.js
-│   │       product_model.js
-│   │       user_model.js
-│   │
-│   ├───routes
-│   │       analyticsRoutes.js
-│   │       companyRoutes.js
-│   │       historyRoutes.js
-│   │       locationRoutes.js
-│   │       productRoutes.js
-│   │       user_routes.js
-│   │
-│   └───utils
-│           user_utils.js
-│
-└───Frontend
-    │   .env
-    │   .eslintrc.cjs
-    │   .gitignore
-    │   index.html
-    │   package-lock.json
-    │   package.json
-    │   postcss.config.js
-    │   README.md
-    │   tailwind.config.js
-    │   vite.config.js
-    │
-    ├───public
-    │       vite.svg
-    │
-    └───src
-        │   App.jsx
-        │   index.css
-        │   main.jsx
-        │   router.jsx
-        │
-        ├───assets
-        │       admin-logo.svg
-        │       authenticate.svg
-        │       menu.svg
-        │       react.svg
-        │       undraw_empty_re.svg
-        │       user-logo.svg
-        │
-        ├───components
-        │       HeaderBar.jsx
-        │       LoadingIndicator.jsx
-        │       LogoutButton.jsx
-        │       PopUpComponenet.jsx
-        │       ShowErrorMessage.jsx
-        │       ShowSuccessMesasge.jsx
-        │       SideNavbar.jsx
-        │       WarrantyExpiringProductsTableComponent.jsx
-        │
-        └───screens
-            │   InventoryFormScreen.jsx
-            │
-            ├───brands
-            │       BrandsScreen.jsx
-            │       EditBrandsScreen.jsx
-            │       NewBrandsScreen.jsx
-            │
-            ├───dashboard
-            │   │   DashBoardLayout.jsx
-            │   │   DashBoardScreen.jsx
-            │   │
-            │   └───components
-            │           AnalyticsComponent.jsx
-            │           PieChart.jsx
-            │
-            ├───locations
-            │       EditLocationScreen.jsx
-            │       LocationsScreen.jsx
-            │       NewLocationScreen.jsx
-            │
-            ├───login
-            │       AuthLayout.jsx
-            │       LoginScreen.jsx
-            │       SignupScreen.jsx
-            │
-            ├───product
-            │       AddNewProductScreen.jsx
-            │       ProductEditScreen.jsx
-            │       ProductHistoryScreen.jsx
-            │       ProductInfoScreen.jsx
-            │       ProductsScreen.jsx
-            │
-            └───users
-                │   UserManagementScreen.jsx
-                │
-                └───components
-                        ChangeRolePopup.jsx
-                        ManageUserTableRow.jsx
-```
 
 ## Prerequisites
 
@@ -236,11 +120,3 @@ VITE_LOCAL=http://localhost:3000
 ### Analytics Routes
 
 - **GET** `/api/v1/analytics` - Get analytics data
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any changes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
