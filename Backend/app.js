@@ -17,7 +17,7 @@ app.use(
       // methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     // credentials: true,
     // preflightContinue: false,
-    origin: "https://inventory-management-nine-xi.vercel.app",
+    origin: "https://inventory-management-eqq8jjf2x-paras-patels-projects-ebd7dde8.vercel.app",
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
   })
