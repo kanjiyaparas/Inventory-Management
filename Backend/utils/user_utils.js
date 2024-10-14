@@ -6,15 +6,14 @@ export const sendcookie = (user, res, message, statuscode = 200) => {
     .status(statuscode)
     .cookie("token", token, {
       httpOnly: true,
-      domain: "https://inventory-management-2wmy7jaoi-paras-patels-projects-ebd7dde8.vercel.app",
       maxAge: 30 * 60 * 10000,
-      sameSite: "None",
-      secure: process.env.NODE_ENV === "production",
+      sameSite: process.env.NODE_ENV === "development" ? "lax" : "none",
+      secure: process.env.NODE_ENV === "development" ? false : true,
     })
     .json({
       success: true,
-      message,
-       user,
+      message:"token set",
+      user,
       token
     });
 };
