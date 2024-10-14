@@ -32,10 +32,12 @@ function LoginScreen() {
       );
 
       if (status === 201) {
-        // console.log(response.headers.Set-Cookie)
-        // alert("Login success");
-        // Redirect to home upon successful login
-        history("/"); // Use history function to redirect
+         const token = data.token;
+         // Adjust this to match your API response structure
+      if (token) {
+        localStorage.setItem("token", token); // Save token in localStorage
+        history("/");
+      }
       } else {
         alert("Wrong credentials. Check Email and password ");
       }
