@@ -33,6 +33,7 @@ function LoginScreen() {
 
       if (status === 201) {
          const token = data.token;
+        console.log(token)
          // Adjust this to match your API response structure
       if (token) {
         localStorage.setItem("token", token); // Save token in localStorage
