@@ -26,7 +26,7 @@ function DashBoardLayout() {
           withCredentials: true,
           headers: {
             "Content-Type": "application/json",
-            token : Token,
+            "token" : Token,
           },
         }
       );
