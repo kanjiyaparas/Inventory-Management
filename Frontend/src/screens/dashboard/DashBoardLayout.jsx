@@ -16,6 +16,7 @@ function DashBoardLayout() {
   useEffect(() => {
     fetchUserInfo();
   }, []);
+  const Token = localStorage.getItem("token")
   const fetchUserInfo = async () => {
     try {
       const { data, status } = await axios.get(
@@ -25,6 +26,7 @@ function DashBoardLayout() {
           withCredentials: true,
           headers: {
             "Content-Type": "application/json",
+            token : Token,
           },
         }
       );
