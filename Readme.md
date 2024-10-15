@@ -17,8 +17,6 @@ An Inventory Management System built with Vite, React.js for the frontend, and N
 - [Running the Application](#running-the-application)
 - [Environment Variables](#environment-variables)
 - [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
